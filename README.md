@@ -1,1 +1,1 @@
-#### Update Apex Offset : 2026-06-28 ( EA App )
+#### Update Apex Offset : 2026-07-1 ( EA App )
