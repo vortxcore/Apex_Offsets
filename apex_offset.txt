@@ -27,14 +27,53 @@ observer_index = 0x974
 studioHdr = 0x1010
 
 [Buttons] 
++attack = 0x3f331a8
++backward = 0x3f33ba0
++break = 0x3f33b58
 +camin = 0x9042520
 +camout = 0x8e9ac60
 +campitchdown = 0x8e9ac40
 +campitchup = 0x9042538
 +camyawleft = 0x8e9b510
 +camyawright = 0x8e9ac50
++commandermousemove = 0x3f33128
++dodge = 0x3f33aa0
++duck = 0x3f33b38
++forward = 0x3f33b78
++graph = 0x3f33988
++jump = 0x3f33a40
++klook = 0x3f33148
++left = 0x3f33a10
++lookdown = 0x3f33a58
++lookup = 0x3f33b48
++melee = 0x3f33138
++movedown = 0x3f339f0
++moveleft = 0x3f33b68
++moveright = 0x3f33b90
++moveup = 0x3f33158
++offhand0 = 0x3f33168
++offhand1 = 0x3f33a00
++offhand2 = 0x3f33a90
++offhand3 = 0x3f33ad0
++offhand4 = 0x3f33b08
 +pause_menu = 0x3f33a20
++ping = 0x3f33178
++reload = 0x3f339a8
++right = 0x3f33a30
++scriptCommand3 = 0x3f33978
++speed = 0x3f33110
++strafe = 0x3f339c0
++toggle_duck = 0x3f33968
++toggle_zoom = 0x3f33998
++use = 0x3f33ab0
++useAndReload = 0x3f33b18
++use_alt = 0x3f33958
++use_long = 0x3f33b28
++variableScopeToggle = 0x3f339d8
++walk = 0x3f33ae8
 +weaponCycle = 0x3f33a68
++weapon_discard = 0x3f33af8
++zoom = 0x3f33ac0
 
 [RecvTable] 
 [DT_AI_BaseNPC]
@@ -191,70 +230,6 @@ m_weaponPermission = 0x1a04
 m_weaponTypeDisabledFlags = 0x1a6c
 m_weaponTypeDisabledRefCount = 0x1a70
 
-[DT_BaseEntity]
-HighlightSettings = 0x0
-m_Collision = 0x3b8
-m_CollisionGroup = 0x438
-m_attachmentLerpEndTime = 0x738
-m_attachmentLerpStartAngles = 0x748
-m_attachmentLerpStartOrigin = 0x73c
-m_attachmentLerpStartTime = 0x734
-m_bIsSoundCodeControllerValueSet = 0x36c
-m_bRenderWithViewModels = 0x398
-m_baseTakeDamage = 0x6bc
-m_bossPlayer = 0x144
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_clIntensity = 0x84
-m_clrRender = 0x80
-m_collideWithOwner = 0x440
-m_contents = 0x43c
-m_dissolveEffectEntityHandle = 0x814
-m_exclusiveUseEnt = 0x620
-m_fEffects = 0x40
-m_fadeDist = 0x764
-m_firstChildEntityLink = 0x928
-m_firstParentEntityLink = 0x92c
-m_flSoundCodeControllerValue = 0x370
-m_grade = 0x340
-m_hOwnerEntity = 0x394
-m_holdUsePrompt = 0x610
-m_iName = 0x481
-m_iSignifierName = 0x478
-m_iTeamNum = 0x330
-m_ignoreParentRotation = 0x2d8
-m_ignorePredictedTriggerFlags = 0x344
-m_instanceNameIndex = 0x58c
-m_invulnerableToDamageCount = 0x6c0
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_nModelIndex = 0x60
-m_nRenderFX = 0x399
-m_nRenderMode = 0x3a9
-m_networkedFlags = 0x2d0
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_passThroughDirection = 0x354
-m_passThroughFlags = 0x34c
-m_passThroughThickness = 0x350
-m_phaseShiftFlags = 0x6b8
-m_pressUsePrompt = 0x618
-m_realmsBitMask = 0x930
-m_scriptNameIndex = 0x588
-m_shouldRenderCloaked = 0x3ac
-m_usableDistanceOverride = 0x82c
-m_usableFOV = 0x830
-m_usablePriority = 0x828
-m_usableType = 0x44
-m_usePromptSize = 0x834
-m_visibilityFlags = 0x328
-m_wantsScopeHighlight = 0x2cc
-movecollide = 0x0
-moveparent = 0x1c
-movetype = 0x0
-predictable_id = 0x0
-
 [DT_BaseGrenade]
 DT_BaseGrenade = 0x0
 m_DmgRadius = 0x2fc4
@@ -317,31 +292,6 @@ overlay_vars = 0x0
 m_iHealths = 0x970
 m_managerIdx = 0xa38
 m_realmsBitMask = 0x930
-
-[DT_CPropDoor]
-HighlightSettings = 0x0
-m_angle = 0x16a4
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_closedAngle = 0x16a0
-m_fEffects = 0x40
-m_iTeamNum = 0x330
-m_interactingPlayer = 0x1708
-m_interactingPlayerWantsOpen = 0x170c
-m_isLocked = 0x16b4
-m_isReinforced = 0x16b5
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_nModelIndex = 0x60
-m_nSkin = 0xd78
-m_networkedFlags = 0x2d0
-m_oppositeDoor = 0x16b8
-m_skinMod = 0xd7c
-m_startAngle = 0x16a8
-m_startAngleVel = 0x16ac
-m_startMoveTime = 0x16b0
-m_usableType = 0x44
 
 [DT_CascadeLight]
 m_LightColor = 0x99f
@@ -418,45 +368,6 @@ m_usePromptSize = 0x834
 m_visibilityFlags = 0x328
 moveparent = 0x1c
 
-[DT_DoorMover]
-m_Collision = 0x3b8
-m_CollisionGroup = 0x438
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_doorFlags = 0x1860
-m_exclusiveUseEnt = 0x620
-m_fEffects = 0x40
-m_fadeDist = 0x764
-m_holdUsePrompt = 0x610
-m_iSignifierName = 0x478
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_nModelIndex = 0x60
-m_networkedFlags = 0x2d0
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_pressUsePrompt = 0x618
-m_scriptNameIndex = 0x588
-m_usableDistanceOverride = 0x82c
-m_usableFOV = 0x830
-m_usablePriority = 0x828
-m_usableType = 0x44
-m_usePromptSize = 0x834
-m_vecAngVelocity = 0x148
-m_vecVelocity = 0x374
-moveparent = 0x1c
-
-[DT_DynamicLight]
-DT_DynamicLight = 0x0
-m_Exponent = 0x978
-m_Flags = 0x970
-m_InnerAngle = 0x97c
-m_LightStyle = 0x971
-m_OuterAngle = 0x980
-m_Radius = 0x974
-m_SpotRadius = 0x984
-
 [DT_DynamicProp]
 DT_DynamicProp = 0x0
 m_bAnimateInStaticShadow = 0x15f2
@@ -484,6 +395,14 @@ m_skinMod = 0xd7c
 m_visibilityFlags = 0x328
 moveparent = 0x1c
 
+[DT_EntityDissolve]
+DT_EntityDissolve = 0x0
+m_flFadeLength = 0x980
+m_flFadeStart = 0x97c
+m_flStartTime = 0x978
+m_isLethal = 0x988
+m_nDissolveType = 0x984
+
 [DT_EntityLinkPage]
 entity = 0xd74
 next = 0x974
@@ -503,91 +422,10 @@ m_iMinGust = 0x1c
 m_iMinWind = 0x10
 m_iWindSeed = 0xc
 
-[DT_FerroProp]
-m_Collision = 0x3b8
-m_CollisionGroup = 0x438
-m_bAnimateInStaticShadow = 0x15f2
-m_bUseHitboxesForRenderBox = 0x15f1
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_contents = 0x43c
-m_exclusiveUseEnt = 0x620
-m_fEffects = 0x40
-m_fadeDist = 0x764
-m_firstChildEntityLink = 0x928
-m_firstParentEntityLink = 0x92c
-m_flModelScale = 0xe38
-m_hOwnerEntity = 0x394
-m_highlightGenericContexts = 0x295
-m_holdUsePrompt = 0x610
-m_iName = 0x481
-m_iSignifierName = 0x478
-m_iTeamNum = 0x330
-m_lifeState = 0x698
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_minimapData = 0x848
-m_nModelIndex = 0x60
-m_networkedFlags = 0x2d0
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_passThroughDirection = 0x354
-m_passThroughFlags = 0x34c
-m_passThroughThickness = 0x350
-m_phaseShiftFlags = 0x6b8
-m_pressUsePrompt = 0x618
-m_realmsBitMask = 0x930
-m_scriptNameIndex = 0x588
-m_usableDistanceOverride = 0x82c
-m_usableFOV = 0x830
-m_usablePriority = 0x828
-m_usableType = 0x44
-m_usePromptSize = 0x834
-m_visibilityFlags = 0x328
-moveparent = 0x1c
-
-[DT_FuncBrushLightweight]
-m_Collision = 0x3b8
-m_CollisionGroup = 0x438
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_nModelIndex = 0x60
-m_networkedFlags = 0x2d0
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_visibilityFlags = 0x328
-moveparent = 0x1c
-
 [DT_GlobalNonRewinding]
 m_gameTimescale = 0x974
 m_playerMiscData = 0xd78
 m_playerObserver = 0x978
-
-[DT_GrappleData]
-m_grappleActivateTime = 0x54
-m_grappleAttachTime = 0x5c
-m_grappleAttached = 0x48
-m_grappleAutoAimTarget = 0x64
-m_grappleForcedRetracting = 0x4c
-m_grappleGracePeriodFinished = 0x4d
-m_grappleHasGoodVelocity = 0x68
-m_grappleLastGoodVelocityTime = 0x6c
-m_grappleMeleeTarget = 0x60
-m_grapplePointCount = 0x44
-m_grapplePoints = 0x0
-m_grapplePoints[0] = 0x14
-m_grapplePullTime = 0x58
-m_grapplePulling = 0x49
-m_grappleRetracting = 0x4b
-m_grappleSwingDetachLowSpeed = 0x70
-m_grappleSwingHoldTimeOrRemainingEdgeGrappleReelTime = 0x74
-m_grappleSwinging = 0x4a
-m_grappleUsedPower = 0x50
-m_grappleVel = 0x8
 
 [DT_GrappleHook]
 m_cellX = 0x48
@@ -603,14 +441,6 @@ m_realmsBitMask = 0x930
 m_visibilityFlags = 0x328
 moveparent = 0x1c
 
-[DT_HighlightSettings]
-m_highlightFadeDuration = 0x2a0
-m_highlightFadeParity = 0x2a8
-m_highlightFocused = 0x29d
-m_highlightGenericContexts = 0x295
-m_highlightTeamBits = 0x1e8
-m_highlightTeamIndex = 0x1d8
-
 [DT_ImportantOnEntSound]
 m_beginTime = 0x978
 m_hAttachedToEntity = 0x974
@@ -624,26 +454,6 @@ m_localAngles = 0x380
 m_localOrigin = 0x4
 m_parentAttachment = 0x20
 m_parentAttachmentModel = 0x758
-moveparent = 0x1c
-
-[DT_InfoTarget]
-m_bIsSoundCodeControllerValueSet = 0x36c
-m_cellX = 0x48
-m_cellY = 0x4c
-m_cellZ = 0x50
-m_firstChildEntityLink = 0x928
-m_firstParentEntityLink = 0x92c
-m_flSoundCodeControllerValue = 0x370
-m_hOwnerEntity = 0x394
-m_iName = 0x481
-m_iSignifierName = 0x478
-m_iTeamNum = 0x330
-m_instanceNameIndex = 0x58c
-m_localAngles = 0x380
-m_localOrigin = 0x54
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_scriptNameIndex = 0x588
 moveparent = 0x1c
 
 [DT_Local]
@@ -768,14 +578,6 @@ m_wallrunLatestFloorHeight = 0x2cc
 m_wasClimbingIntoMantle = 0x1c
 predictableFlags = 0x50
 
-[DT_LootGrabber]
-DT_LootGrabber = 0x0
-m_impactEffectColorID = 0x1670
-m_lootBeingGrabbed = 0x1678
-m_lootGrabDist = 0x167c
-m_lootGrabberType = 0x1672
-m_minimapData = 0x848
-
 [DT_MTXUserInfoEntity]
 DT_MTXUserInfoEntity = 0x0
 data0 = 0x970
@@ -788,6 +590,12 @@ objectScale = 0x4c
 visibilityDefaultFlag = 0x0
 visibilityShowFlag = 0x20
 zOrder = 0x44
+
+[DT_Missile]
+DT_Missile = 0x0
+m_hSpecificTarget = 0x3014
+m_targetPosition = 0x3024
+m_useTargetPosition = 0x3030
 
 [DT_ParticleSystem]
 m_bActive = 0x979
@@ -818,6 +626,17 @@ m_vServerControlPointColorIds = 0x9fd
 m_vServerControlPoints = 0x994
 m_visibilityFlags = 0x328
 moveparent = 0x1c
+
+[DT_PhysicsProp]
+DT_PhysicsProp = 0x0
+m_bAwake = 0x15f8
+m_collisionMaxs = 0x163c
+m_collisionMins = 0x1630
+m_fMass = 0x162c
+m_iPhysicsMode = 0x1628
+m_ignoresCollisionWithCombatCharacters = 0x15f9
+m_isRolling = 0x15fa
+m_networkTableRollSoundId = 0x15fc
 
 [DT_Player]
 DT_Player = 0x0
@@ -1006,12 +825,6 @@ pendingMeleePress = 0x24
 previousMainOffhand = 0x34
 scriptedState = 0x20
 
-[DT_PlayerState]
-currentClass = 0x10
-deadflag = 0x6c
-onDeathClass = 0x20
-requestedClass = 0x18
-
 [DT_PlayerTeamShared]
 m_healResources_healthTarget = 0x2614
 m_lastTimeDamaged = 0x3174
@@ -1069,59 +882,6 @@ m_flRadius = 0x978
 DT_PostProcessController = 0x0
 m_bMaster = 0x988
 m_flPostProcessParameters = 0x970
-
-[DT_RopeKeyframe]
-m_RopeFlags = 0xad8
-m_Slack = 0xdb4
-m_TextureScale = 0xdb8
-m_Width = 0xdcc
-m_bConstrainBetweenEndpoints = 0xe60
-m_clrRender = 0x80
-m_constraintIterations = 0xdac
-m_endOffset = 0xa80
-m_fLockedPoints = 0xdbc
-m_fadeDist = 0x764
-m_flScrollSpeed = 0xad4
-m_hEndPoint = 0xd68
-m_hOwnerEntity = 0x394
-m_hPrevPoint = 0xd6c
-m_hStartPoint = 0xd64
-m_iEndAttachment = 0xd71
-m_iRopeMaterialModelIndex = 0xadc
-m_iStartAttachment = 0xd70
-m_localOrigin = 0x4
-m_lockDirectionCutoffLength = 0xdc0
-m_lockDirectionStrength = 0xdc4
-m_nChangeCount = 0xdc8
-m_nRenderMode = 0x3a9
-m_nSegments = 0xd60
-m_parentAttachment = 0x20
-m_parentAttachmentModel = 0x758
-m_ropeDampening = 0xdb0
-m_ropeLength = 0xda4
-m_ropeZiplineAutoDetachDistance = 0x970
-m_startOffset = 0xa74
-m_subdivSliceCount = 0xda0
-m_subdivStackCount = 0xd9c
-m_visibilityFlags = 0x328
-m_wiggleEndTime = 0xa90
-m_wiggleFadeStartTime = 0xa8c
-m_wiggleMagnitude = 0xa98
-m_wiggleMaxLen = 0xa94
-m_wiggleSpeed = 0xa9c
-m_ziplineMoveSpeedScale = 0xa70
-m_ziplineSagEnable = 0x974
-m_ziplineSagHeight = 0x978
-moveparent = 0x1c
-
-[DT_ScriptMover]
-DT_ScriptMover = 0x0
-m_initialAngles = 0x1834
-m_initialOrigin = 0x1828
-m_localAngles = 0x380
-m_parentAttachment = 0x20
-m_vecAngVelocity = 0x148
-m_vecVelocity = 0x374
 
 [DT_ScriptMoverLightweight]
 m_RotateToAnglesEnd = 0x17fc
@@ -1306,15 +1066,6 @@ m_soundID = 0x8
 m_soundIsStart = 0x14
 m_targetEnt = 0x0
 
-[DT_SpikeStripInfo]
-m_arePlayersInStrip = 0x978
-m_enabledLocations = 0x970
-m_mainSpike = 0x97c
-m_mainSpikeCreationTime = 0x980
-m_spikeLocalAngles = 0xc54
-m_spikeLocalOffsets = 0xa38
-m_spikeParents = 0x984
-
 [DT_StatusEffectPlugin]
 m_hOwnerEntity = 0x394
 m_statusEffectsEndlessPluginNV = 0x988
@@ -1372,6 +1123,16 @@ m_nSkin = 0x50
 m_vecOrigin = 0x28
 m_vecVelocity = 0x40
 
+[DT_TEProjectileTrail]
+DT_TEProjectileTrail = 0x0
+m_endPos = 0x38
+m_impactEffectTable = 0x58
+m_modBitfield = 0x48
+m_owner = 0x28
+m_projectileTrailIndex = 0x54
+m_startPos = 0x2c
+m_weaponClassIndex = 0x44
+
 [DT_TEScriptParticleSystem]
 DT_TEScriptParticleSystem = 0x0
 m_angles = 0x38
@@ -1396,205 +1157,6 @@ m_score2 = 0x974
 m_scriptCustomValue = 0x978
 m_szTeamname = 0x9a0
 player_array_element = 0x0
-
-[DT_ThirdPersonView]
-m_thirdPersonEntBlendInEaseInDuration = 0x1c
-m_thirdPersonEntBlendInEaseOutDuration = 0x20
-m_thirdPersonEntBlendInTotalDuration = 0x18
-m_thirdPersonEntBlendOutDuration = 0x24
-m_thirdPersonEntDrawViewmodel = 0x12
-m_thirdPersonEntEnableCameraLag = 0x13
-m_thirdPersonEntFixedClientOnly = 0x10
-m_thirdPersonEntFixedDist = 0x30
-m_thirdPersonEntFixedHeight = 0x34
-m_thirdPersonEntFixedPitch = 0x28
-m_thirdPersonEntFixedRight = 0x38
-m_thirdPersonEntFixedYaw = 0x2c
-m_thirdPersonEntFreezeLookControls = 0x14
-m_thirdPersonEntLookaheadLerpAheadRate = 0xbc
-m_thirdPersonEntLookaheadLerpToCenterRate = 0xc0
-m_thirdPersonEntLookaheadLowerEntSpeed = 0xb0
-m_thirdPersonEntLookaheadMaxAngle = 0xb8
-m_thirdPersonEntLookaheadUpperEntSpeed = 0xb4
-m_thirdPersonEntMaxPitch = 0xa4
-m_thirdPersonEntMaxYaw = 0x9c
-m_thirdPersonEntMinPitch = 0xa0
-m_thirdPersonEntMinYaw = 0x98
-m_thirdPersonEntPitchIsFreelook = 0xd
-m_thirdPersonEntPushedInByGeo = 0x11
-m_thirdPersonEntShouldUse1pAudio = 0x15
-m_thirdPersonEntShouldViewAnglesFollowThirdPersonEnt = 0xc
-m_thirdPersonEntSpringToCenterDelay = 0xac
-m_thirdPersonEntSpringToCenterRate = 0xa8
-m_thirdPersonEntUseFixedDist = 0xf
-m_thirdPersonEntVariableDistEnd = 0x40
-m_thirdPersonEntVariableDistEndTime = 0x48
-m_thirdPersonEntVariableDistLerpLogGrowthFactor = 0x50
-m_thirdPersonEntVariableDistLerpType = 0x4c
-m_thirdPersonEntVariableDistStart = 0x3c
-m_thirdPersonEntVariableDistStartTime = 0x44
-m_thirdPersonEntVariableHeightEnd = 0x58
-m_thirdPersonEntVariableHeightEndTime = 0x60
-m_thirdPersonEntVariableHeightLerpLogGrowthFactor = 0x68
-m_thirdPersonEntVariableHeightLerpType = 0x64
-m_thirdPersonEntVariableHeightStart = 0x54
-m_thirdPersonEntVariableHeightStartTime = 0x5c
-m_thirdPersonEntVariableRightEnd = 0x70
-m_thirdPersonEntVariableRightEndTime = 0x78
-m_thirdPersonEntVariableRightLerpLogGrowthFactor = 0x80
-m_thirdPersonEntVariableRightLerpType = 0x7c
-m_thirdPersonEntVariableRightStart = 0x6c
-m_thirdPersonEntVariableRightStartTime = 0x74
-m_thirdPersonEntViewOffset.x = 0x0
-m_thirdPersonEntViewOffset.y = 0x4
-m_thirdPersonEntViewOffset.z = 0x8
-m_thirdPersonEntYawIsFreelook = 0xe
-
-[DT_TriggerCylinderHeavy]
-DT_TriggerCylinderHeavy = 0x0
-m_airControlMoveAccel = 0xa30
-m_airControlMoveSpeed = 0xa2c
-m_blackholeInnerMoveSpeed = 0xa48
-m_blackholeInnerPullSpeed = 0xa40
-m_blackholeInnerRadius = 0xa4c
-m_blackholeIsStrongPulling = 0xa34
-m_blackholeOuterMoveSpeed = 0xa44
-m_blackholeOuterPullSpeed = 0xa3c
-m_blackholeStrongPullAddlSpeed = 0xa38
-m_enableDoubleJump = 0xa08
-m_gravityCannonLaunched = 0x9fc
-m_gravityLiftEjectForwardSpeed = 0xa20
-m_gravityLiftEjectUpSpeed = 0xa1c
-m_gravityLiftMaxEjectTime = 0xa24
-m_gravityLiftMaxHoverTime = 0xa28
-m_gravityLiftToCenterAccel = 0xa18
-m_gravityLiftToCenterSpeed = 0xa14
-m_gravityLiftUpAccel = 0xa10
-m_gravityLiftUpSpeed = 0xa0c
-m_launchDelayAmount = 0xa04
-m_launchDir = 0xa74
-m_launchFlightTime = 0xa00
-m_launchPower = 0x9e8
-m_limitedAirControl = 0xa09
-m_mortarRingSegementEnd = 0xa8c
-m_mortarRingSegementStart = 0xa88
-m_nextLaunchTime = 0x9f8
-m_punchHardAmount = 0x9f0
-m_punchRandomBoost = 0x9f4
-m_punchSoftAmount = 0x9ec
-m_teslaTrapBaseHeight = 0xa54
-m_teslaTrapEnd = 0xa64
-m_teslaTrapFXVisible = 0xa50
-m_teslaTrapObstructedEndTime = 0xa5c
-m_teslaTrapStart = 0xa60
-m_teslaTrapUp = 0xa68
-m_triggerType = 0x9e0
-m_vertOverride = 0x9e4
-
-[DT_TriggerCylinderNetworked]
-DT_TriggerCylinderNetworked = 0x0
-m_aboveHeight = 0x9bc
-m_belowHeight = 0x9c0
-m_radius = 0x9b8
-m_triggerFilterMask = 0x9b0
-
-[DT_TriggerSlipSphere]
-DT_TriggerSlipSphere = 0x0
-m_defaultSlipDirection = 0x9b0
-m_slipAcceleration = 0x9c0
-m_slipSpeed = 0x9bc
-m_sphereOverrideRadius = 0x9d0
-
-[DT_Turret]
-DT_Turret = 0x0
-m_driver = 0x194c
-m_driverDetachTime = 0x197c
-m_driverState = 0x1980
-m_forceAimPitch = 0x1974
-m_forceAimYaw = 0x1978
-m_iHealth = 0x320
-m_iMaxHealth = 0x470
-m_overlayEventParity = 0x1701
-m_settingsIndex = 0x1938
-m_title = 0x1990
-m_turretWeapon = 0x1984
-
-[DT_UVAnimProp]
-DT_UVAnimProp = 0x0
-m_bUVAnimPlaying = 0x1670
-m_flLastKeyTime = 0x1678
-m_flUVAnimStartTime = 0x1674
-
-[DT_VGuiScreen]
-DT_VGuiScreen = 0x0
-m_fScreenFlags = 0x9a4
-m_flHeight = 0x974
-m_flWidth = 0x970
-m_hPlayerOwner = 0xa08
-m_nAttachmentId = 0x99c
-m_nOverlayMaterial = 0x9a0
-m_nPanelName = 0x980
-
-[DT_VehicleDriverExclusive]
-m_gravityLiftActive = 0x1d11
-m_gravityLiftEnterTime = 0x1d14
-m_gravityLiftExitTime = 0x1d18
-m_hoverVehicleAccel = 0x1e64
-m_hoverVehicleAirAccel = 0x1e80
-m_hoverVehicleAirStartTime = 0x1ec4
-m_hoverVehicleBoostCollisionTime = 0x1ea0
-m_hoverVehicleBoostCooldown = 0x1e8c
-m_hoverVehicleBoostMax = 0x1e88
-m_hoverVehicleBoostMin = 0x1e84
-m_hoverVehicleBoostPartialCooldown = 0x1e90
-m_hoverVehicleBoostRegenRate = 0x1e94
-m_hoverVehicleDebugFlyMode = 0x1f18
-m_hoverVehicleDecel = 0x1e70
-m_hoverVehicleDecelPowerBraking = 0x1e7c
-m_hoverVehicleDriverInFreelook = 0x1ef4
-m_hoverVehicleGlideDuration = 0x1ec8
-m_hoverVehicleHoverOffsetPrev = 0x0
-m_hoverVehicleHoverOffsetPrev[0] = 0x1d4c
-m_hoverVehicleIsBoosting = 0x1ea4
-m_hoverVehicleIsGliding = 0x1ea5
-m_hoverVehicleJumpBoostCost = 0x1eb4
-m_hoverVehicleJumpDebounceDuration = 0x1ebc
-m_hoverVehicleJumpSpeed = 0x1eb0
-m_hoverVehicleJumpToExit = 0x1eac
-m_hoverVehicleLastGlideEndTime = 0x1ecc
-m_hoverVehicleLastGlideStartTime = 0x1ec0
-m_hoverVehicleLastJumpTime = 0x1eb8
-m_hoverVehicleLookAheadAcceleration = 0x1ef8
-m_hoverVehicleMaxSpeed = 0x1e60
-m_hoverVehiclePhysPush = 0x1f54
-m_hoverVehicleSmoothTilt = 0x1ed4
-m_hoverVehicleSmoothTiltVelocity = 0x1ee0
-m_hoverVehicleSmoothYaw = 0x1eec
-m_hoverVehicleSmoothYawVelocity = 0x1ef0
-m_hoverVehicleTotalBoostTime = 0x1e98
-m_hoverVehicleUsedBoostTime = 0x1e9c
-m_inputHeldPostJump = 0x1ed0
-m_jumpEffectsStarted = 0x1d10
-m_localOrigin = 0x4
-m_localOrigin.z = 0xc
-m_pushedFixedPointOffset = 0x2048
-
-[DT_VortexSphere]
-DT_VortexSphere = 0x0
-m_bulletAbsorbedCount = 0x980
-m_bulletFov = 0x97c
-m_enabled = 0x970
-m_gunAttachment = 0x9a0
-m_height = 0x978
-m_iHealth = 0x320
-m_iMaxHealth = 0x470
-m_ownerWeapon = 0x988
-m_projectileAbsorbedCount = 0x984
-m_radius = 0x974
-m_spawnflags = 0xc4
-m_useExactSphereRadiusForHit = 0x9a8
-m_vortexEffect = 0x98c
-m_vortexLocalAngles = 0x990
 
 [DT_WeaponPlayerData]
 m_akimboDisabled = 0xec
@@ -5491,11 +5053,6 @@ m_localAngles = 0x184
 m_localOrigin = 0x178
 m_vecVelocity = 0x374
 
-[CTurret]
-m_aimAngle = 0x1950
-m_maxConeAngle = 0x1968
-m_minConeAngle = 0x195c
-
 [CWeaponX]
 m_ActiveState = 0x161c
 m_SequenceTransitioner = 0xb48
@@ -5702,17 +5259,6 @@ m_minFadeTime = 0x984
 m_exposurePriority = 0x988
 m_exposureTarget = 0x978
 m_exposureTargetName = 0x980
-m_volumeTester = 0x970
-
-[C_FogController]
-m_fogAngles = 0x9dc
-m_fogParams = 0x970
-m_useAbsAngles = 0x9e8
-
-[C_FogVolume]
-m_fogPriority = 0x988
-m_fogTarget = 0x978
-m_fogTargetName = 0x980
 m_volumeTester = 0x970
 
 [C_GlobalNonRewinding]
@@ -6065,53 +5611,6 @@ m_zoomFullStartTime = 0x1ce0
 m_zoomToggleOnStartTime = 0x1cd4
 pl = 0x2588
 
-[C_PlayerVehicle]
-m_SequenceTransitioner = 0xb48
-m_blockDuckInput = 0x1cf9
-m_gravityLiftActive = 0x1d11
-m_gravityLiftEnterTime = 0x1d14
-m_gravityLiftExitTime = 0x1d18
-m_hoverVehicleAirStartTime = 0x1ec4
-m_hoverVehicleBanking = 0x1f30
-m_hoverVehicleBoostCollisionTime = 0x1ea0
-m_hoverVehicleDriverInFreelook = 0x1ef4
-m_hoverVehicleFrictionLastTime = 0x1f34
-m_hoverVehicleFrictionNormal = 0x1f3c
-m_hoverVehicleFrictionPos = 0x1f48
-m_hoverVehicleFrictionSurfPropOther = 0x1f38
-m_hoverVehicleGlideDuration = 0x1ec8
-m_hoverVehicleGroundAngles = 0x1d5c
-m_hoverVehicleHoverOffsetPrev = 0x1d4c
-m_hoverVehicleHoverSimulationIsAwake = 0x1d6a
-m_hoverVehicleIsBoosting = 0x1ea4
-m_hoverVehicleIsGliding = 0x1ea5
-m_hoverVehicleIsMarkedAsDrivingForward = 0x1f1a
-m_hoverVehicleIsOnGround = 0x1d68
-m_hoverVehicleLastBoostEffectTime = 0x1f0c
-m_hoverVehicleLastBoostTime = 0x1f04
-m_hoverVehicleLastGlideEndTime = 0x1ecc
-m_hoverVehicleLastGlideStartTime = 0x1ec0
-m_hoverVehicleLastJumpTime = 0x1eb8
-m_hoverVehicleLookAheadAcceleration = 0x1ef8
-m_hoverVehiclePhysPush = 0x1f54
-m_hoverVehicleSmoothTilt = 0x1ed4
-m_hoverVehicleSmoothTiltVelocity = 0x1ee0
-m_hoverVehicleSmoothYaw = 0x1eec
-m_hoverVehicleSmoothYawVelocity = 0x1ef0
-m_hoverVehicleStunTimeEnd = 0x1f1c
-m_hoverVehicleThrottle = 0x1f28
-m_hoverVehicleUsedBoostTime = 0x1e9c
-m_inputHeldPostJump = 0x1ed0
-m_jumpEffectsStarted = 0x1d10
-m_localOrigin = 0x178
-m_vehicleActivated = 0x1cf8
-m_vehicleDriver = 0x1cd4
-m_vehicleGroundDist = 0x1d48
-m_vehicleGroundEntity = 0x1d38
-m_vehicleGroundNormal = 0x1d3c
-m_vehicleLaunchTime = 0x1d1c
-m_vehicleVelocity = 0x1d2c
-
 [C_SequenceTransitioner]
 m_sequenceTransitionerLayerCount = 0x1a0
 m_sequenceTransitionerLayers = 0x50
@@ -6132,49 +5631,9 @@ m_score2 = 0x974
 m_scriptCustomValue = 0x978
 m_szTeamname = 0x9a0
 
-[C_TriggerCylinderHeavy]
-m_nextLaunchTime = 0x9f8
-m_teslaTrapObstructedEndTime = 0xa5c
-
-[C_TriggerHurt]
-m_bitsDamageInflict = 0x9c4
-m_damageModel = 0x9c8
-m_flDamage = 0x9b4
-m_flDamageCap = 0x9b8
-m_flDmgResetTime = 0x9c0
-m_flLastDmgTime = 0x9bc
-m_flOriginalDamage = 0x9b0
-
-[C_VortexSphere]
-m_bulletAbsorbedCount = 0x980
-m_bulletFov = 0x97c
-m_enabled = 0x970
-m_gunAttachment = 0x9a0
-m_height = 0x978
-m_listNext = 0x9b8
-m_listPrev = 0x9b0
-m_ownerWeapon = 0x988
-m_projectileAbsorbedCount = 0x984
-m_radius = 0x974
-m_useExactSphereRadiusForHit = 0x9a8
-m_vortexEffect = 0x98c
-m_vortexLocalAngles = 0x990
-
-[C_WindSettings]
-m_windGustTexture = 0x970
-
-[C_WindVolume]
-m_params.edgeFade = 0x9ac
-m_params.enabled = 0x9b8
-m_params.scale = 0x97c
-m_params.shapeParams = 0x970
-m_params.shapeType = 0x9b0
-m_params.sortPriority = 0x9b4
-m_params.windDir = 0x994
-m_params.windGustScale = 0x9a8
-m_params.windOrigin = 0x988
-m_params.windSpeed = 0x9a0
-m_params.windType = 0x9a4
+[C_WallrunCurve]
+height = 0x984
+width = 0x980
 
 [C_WindowHint]
 halfSize = 0x998
