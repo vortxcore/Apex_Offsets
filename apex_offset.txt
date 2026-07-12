@@ -422,11 +422,6 @@ m_iMinGust = 0x1c
 m_iMinWind = 0x10
 m_iWindSeed = 0xc
 
-[DT_GlobalNonRewinding]
-m_gameTimescale = 0x974
-m_playerMiscData = 0xd78
-m_playerObserver = 0x978
-
 [DT_GrappleHook]
 m_cellX = 0x48
 m_cellY = 0x4c
@@ -1066,17 +1061,6 @@ m_soundID = 0x8
 m_soundIsStart = 0x14
 m_targetEnt = 0x0
 
-[DT_StatusEffectPlugin]
-m_hOwnerEntity = 0x394
-m_statusEffectsEndlessPluginNV = 0x988
-m_statusEffectsTimedPluginNV = 0x970
-
-[DT_StatusEffectTimedData]
-seComboVars = 0x8
-seEaseOut = 0x10
-sePausedTimeRemaining = 0x14
-seTimeEnd = 0xc
-
 [DT_TEBreakModel]
 DT_TEBreakModel = 0x0
 m_angRotation.x = 0x34
@@ -1157,6 +1141,23 @@ m_score2 = 0x974
 m_scriptCustomValue = 0x978
 m_szTeamname = 0x9a0
 player_array_element = 0x0
+
+[DT_VortexSphere]
+DT_VortexSphere = 0x0
+m_bulletAbsorbedCount = 0x980
+m_bulletFov = 0x97c
+m_enabled = 0x970
+m_gunAttachment = 0x9a0
+m_height = 0x978
+m_iHealth = 0x320
+m_iMaxHealth = 0x470
+m_ownerWeapon = 0x988
+m_projectileAbsorbedCount = 0x984
+m_radius = 0x974
+m_spawnflags = 0xc4
+m_useExactSphereRadiusForHit = 0x9a8
+m_vortexEffect = 0x98c
+m_vortexLocalAngles = 0x990
 
 [DT_WeaponPlayerData]
 m_akimboDisabled = 0xec
@@ -5261,10 +5262,6 @@ m_exposureTarget = 0x978
 m_exposureTargetName = 0x980
 m_volumeTester = 0x970
 
-[C_GlobalNonRewinding]
-m_playerMiscData = 0xd78
-m_playerObserver = 0x978
-
 [C_KnockBack]
 beginTime = 0x14
 endTime = 0x18
@@ -5630,6 +5627,21 @@ m_score = 0x970
 m_score2 = 0x974
 m_scriptCustomValue = 0x978
 m_szTeamname = 0x9a0
+
+[C_VortexSphere]
+m_bulletAbsorbedCount = 0x980
+m_bulletFov = 0x97c
+m_enabled = 0x970
+m_gunAttachment = 0x9a0
+m_height = 0x978
+m_listNext = 0x9b8
+m_listPrev = 0x9b0
+m_ownerWeapon = 0x988
+m_projectileAbsorbedCount = 0x984
+m_radius = 0x974
+m_useExactSphereRadiusForHit = 0x9a8
+m_vortexEffect = 0x98c
+m_vortexLocalAngles = 0x990
 
 [C_WallrunCurve]
 height = 0x984
