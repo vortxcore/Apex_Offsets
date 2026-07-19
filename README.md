@@ -1,1 +1,1 @@
-#### Update Apex Offset : 2026-07-11
+#### Update Apex Offset EA / STEAM : 2026-07-11
